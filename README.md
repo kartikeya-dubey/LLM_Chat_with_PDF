@@ -1,5 +1,5 @@
 # LLM_Chat_with_PDF
-[For Code update pull main]
+[This is master - For Code update pull main]
 
 Tags: GenAI - Cohere - RAG - Advanced RAG using Reranker
 
