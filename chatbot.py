@@ -6,11 +6,12 @@ os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")  #To store monito
 
 import streamlit as st
 from dotenv import load_dotenv
-from PyPDF2 import PdfReader
+#from PyPDF2 import PdfReader
+from pypdf import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain_community.embeddings import CohereEmbeddings
+#from langchain_community.embeddings import CohereEmbeddings
 from langchain_community.vectorstores import faiss
-from langchain_cohere import ChatCohere
+from langchain_cohere import ChatCohere, CohereEmbeddings
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
